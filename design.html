@@ -1,133 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ck Construction Works</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous">
   
   <style>
+  
+    body {
+      font-family: Arial, sans-serif;
+    }
 
-    h1{
+    h1 {
       text-align: center;
-    }
-    .container{
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 1fr 1fr;
-     padding: 1rem;
-     gap: 2rem;
-     margin: 20px;
-   }
-
-    .design img{
-      border: 10px solid rgb(0, 0, 0);
+      margin: 2rem 0;
     }
 
-    .house{
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+      margin: 20px;
+    }
+
+    .design img {
       width: 100%;
-      max-width: 300px;
-      height: auto;
-      max-height: 300px;
+      height: 500px; 
+      object-fit: cover; 
+      border: 10px solid #000;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .bahay {
+      width: 100%;
+      height: 500px; 
+      max-width: 100%;
+      object-fit: cover;
       margin-left: auto;
       margin-right: auto;
     }
 
-    .container a{
-      color: rgb(0, 0, 0);
+    
+    .container button {
+      background-color: #fff;
+      padding: 0.5rem;
+      border-radius: 10px;
+      border: 1px solid #007bff;
+      width: 100%;
+      text-align: center;
     }
 
-    .container button{
-        background-color: rgb(255, 255, 255);
-        margin: 0;
-        outline: 0;
-        padding: 0.5rem;    
-        border-radius: 10px;  
+    .container button:hover {
+      background-color: #0383bf;
+      cursor: pointer;
     }
 
-    .container button:hover{
-        background-color: rgb(3, 131, 191);
-        cursor: pointer;
+    .container a {
+      text-decoration: none;
+      color: inherit;
     }
-
-  
- 
   </style>
-  
 </head>
 
 <body>
-  
-<nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" data-bs-theme="light">
-    <div class="container-fluid">
 
-      <img src="./Images/Ck.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-      <a class="navbar-brand" href="#">Ck Construction Works</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./design.html">Designs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./help.html">Contact/Help</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" data-bs-theme="light">
+      <div class="container-fluid">
+        <img src="./Images/Ck.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="#">Ck Construction Works</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarColor03" aria-controls="navbarColor03" 
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./design.html">Designs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./help.html">Contact/Help</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  
-<h1>Sample House Designs</h1>
+    </nav>
+  </header>
 
-<div class="container">
-  <div class="design">
-    <img class="house" src="./Images/house1.png">
-    <br>
-    <button class="center"><a href="https://www.facebook.com/share/v/12AXBmT6HEH/">Inside House Tour</a></button>
-  </div>
+  <main>
+    <h1>Sample House Designs</h1>
 
-  <div class="design">
-    <img class="house" src="./Images/house2.png">
-    <br>
-    <button class="center"><a href="https://www.facebook.com/share/v/1DfQ8rfhHf/">Inside House Tour</a></button>
-  </div>
+    <section class="container">
+      <div class="design">
+        <img class="bahay" src="./Images/house1.png" alt="House Design 1">
+        <button><a href="https://www.facebook.com/share/v/12AXBmT6HEH/">Inside House Tour</a></button>
+      </div>
 
-  <div class="design">
-    <img class="house" src="./Images/house3.png">
-    <br>
-    <button class="center"><a href="https://www.facebook.com/share/v/1EnEbd7Ldn/">Inside House Tour</a></button>
-  </div>
+      <div class="design">
+        <img class="bahay" src="./Images/house2.png" alt="House Design 2">
+        <button><a href="https://www.facebook.com/share/v/1DfQ8rfhHf/">Inside House Tour</a></button>
+      </div>
 
-  <div class="design">
-    <img class="house" src="./Images/house4.png">
-    <br>
-    <button class="center"><a href="https://www.facebook.com/share/v/1DTwrqRCYp/">Inside House Tour</a></button>
-  </div>
+      <div class="design">
+        <img class="bahay" src="./Images/house3.png" alt="House Design 3">
+        <button><a href="https://www.facebook.com/share/v/1EnEbd7Ldn/">Inside House Tour</a></button>
+      </div>
 
-  <div class="design">
-    <img class="house" src="./Images/house5.png">
-    <br>
-    <button class="center"><a href="https://www.facebook.com/share/v/1ERYoZXHRe/">Inside House Tour</a></button>
-  </div>
+      <div class="design">
+        <img class="bahay" src="./Images/house4.png" alt="House Design 4">
+        <button><a href="https://www.facebook.com/share/v/1DTwrqRCYp/">Inside House Tour</a></button>
+      </div>
 
-  <div class="design">
-    <img class="house" src="./Images/house6.png">
-    <br>
-    <button class="center"><a href="https://www.facebook.com/share/v/1JBn2VjpH2/">Inside House Tour</a></button>
-  </div>
+      <div class="design">
+        <img class="bahay" src="./Images/house5.png" alt="House Design 5">
+        <button><a href="https://www.facebook.com/share/v/1ERYoZXHRe/">Inside House Tour</a></button>
+      </div>
 
-</div>
+      <div class="design">
+        <img class="bahay" src="./Images/house6.png" alt="House Design 6">
+        <button><a href="https://www.facebook.com/share/v/1JBn2VjpH2/">Inside House Tour</a></button>
+      </div>
+    </section>
+  </main>
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+          crossorigin="anonymous"></script>
 </body>
 </html>
