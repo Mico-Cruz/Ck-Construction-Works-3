@@ -13,32 +13,4 @@ body {
   width: 100%;
   height: auto;
 }
-
-div.scrollmenu {
-  background-color: #014996;
-  overflow: auto;
-  white-space: nowrap;
-  text-align: right;
-  font-size: 20px;
-}
-
-div.scrollmenu a {
-  display: inline-block;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-  margin: 5px;
-}
-
-div.scrollmenu a:hover {
-  background-color: #000000;
-}
-
-@media screen and (max-width: 400px) {
-  div .scrollmenu{
-    font-size: 10px;
-  }
-}
-
   
